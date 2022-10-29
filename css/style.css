@@ -1,0 +1,634 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.desktopviewalert{
+    text-align: center;
+}
+.mobileShow{
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .mobileShow{
+        display: block;
+        margin: 0 !important;
+        padding: 0;
+    }
+    .desktopviewalert{
+        display: none;
+    }
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+    .navbar{
+        width: 100%;
+        height: 56px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+    }
+    .logo{
+        width: 30px;
+        margin-left: 30px;
+    }
+    .refer{
+        margin-right: 12%;
+        display: -webkit-box;
+    }
+    .refer p{
+        font-weight: 700;
+    }
+    .refer img{
+        margin-top: 17px;
+        margin-right: 7px;
+    }
+    .searchbar{
+        margin-left:10px;
+        margin-right: 10px;
+    }
+    .fa-search{
+        padding: 12px;
+        height: 18px;
+        background: #F4F4F4;
+        color: #898A8D;
+        border-radius: 4px 0 0 4px;
+    }
+    .searchbar input[type=text]{
+        text-align: center;
+        text-indent: -75px;
+        width:88%;
+        height: 40px;
+        border: none;
+        background-color: #F4F4F4;
+        color: #898A8D;
+        border: none;
+        outline: none;
+        border-radius: 0 4px 4px 0;
+        margin: -6px;
+    }
+    .userreward{
+        height: 286px;
+        background-color: #fff0e3;
+        padding: 28px;
+    }
+    .userreward h1, .user_preferences h1{
+        font-size: 24px;
+        font-weight: 700;
+        margin: 0;
+    }
+    .userreward h5{
+        color: #262626;
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 10px;
+    }
+    .rewardpoints{
+        width: 312px;
+        height: 150px;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    .rewardpoints img{
+        width: 305px;
+        height: auto;
+    }
+    .brandslide{
+        width: 100%;
+        height: 110px;
+    }
+        .item-a { width:200px; }
+        .item-b { width:90px; }
+        .item-c { width:90px; }
+        .item-d { width:100px; }    
+    .brandlogo{
+        padding: 40px;
+    }
+    .cs-hidden{
+        overflow: visible !important;
+    }
+    .ajio_poster{
+        width: 100%;
+        padding: 12px;
+    }
+    .ajio_poster img{
+        display: block;
+        width: 95%;
+        height: auto;
+   }
+    .heading1{
+        text-transform: uppercase;
+        font-weight: 800;
+        margin-left: 20px;
+        font-size: 24px;
+    }
+    .heading2{
+        margin-left: 20px;
+        color: #262626;
+        margin-top: -15px;
+        font-size: 14px;
+        margin-right: 40px;
+    }
+    .brandbanner{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 450px;
+        overflow: hidden;
+    }
+    .brandposter{
+        width: 246px;
+        margin-right: 30px;
+        height: 335px;
+        border: 10px solid;
+        border-image-slice: 1;
+        border-width: 8px;
+        border-image-source: linear-gradient(to left, #FFE600, #FF3D00);
+    }
+    .brandbanner_logo{
+        padding: 6px;
+        margin-left: 8px;
+        width: 39px;
+        height: 19px;
+    }
+    .brandbanner_product{
+        width: 241px;
+        height: 241px;
+    }
+    .flash_box{
+        background-color: white;
+        display: flex;
+        font-size: 12px;
+        font-weight: 800;
+        width: 98px;
+        height: 16px;
+        margin-left: 24px;
+    }
+    .flash_icon{
+        width: 12px;
+        width: 12px;
+    }
+    .flash_price{
+        width: 214px;
+        height: 56px;
+        background-image: linear-gradient(to right, #FFD5BE, #FFE600);
+        margin-left: 10px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+    .flash_price_text{
+        padding: 20px;
+        font-size: 18px;
+    }
+    .flash_price_text span{
+        font-weight: 800;
+        margin-left: 16px;
+    }
+    s, strike{text-decoration:none;position:relative;}
+    s::before, strike::before {
+        top: 50%;
+        background:red;
+        opacity:.7;
+        content: '';
+        width: 110%;
+        position: absolute;
+        height:.1em;
+        border-radius:.1em;
+        left: -5%;
+        white-space:nowrap;
+        display: block;
+        transform: rotate(-15deg);  
+    }
+    s.straight::before, strike.straight::before{transform: rotate(0deg);left:-1%;width:102%;}
+    .brand_extrabenifits{
+        width: 246px;
+        height: 28px;
+        text-align: center;
+        border: 1px solid #FFD747;
+        font-size: 12px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+    }
+    .brand_extrabenifits span{
+        margin-top: 5px;
+    }
+    .flash_price_info{
+        padding: 20px;
+        font-size: 12px;
+        font-weight: 400;
+        color: #626262;
+        margin-top: -25px;
+    }
+    .brand_offers{
+        display: flex;
+        flex-flow: column wrap;
+        height: 450px;
+        padding: 40px;
+    }
+    .brand_offers_box{
+        margin-top: 40px;
+        width: 140px;
+        height: 180px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);    
+    }
+    .brand_offers_box_logo, .brand_offers_box_detail{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    .brand_offers_box_logo img{
+        width: 80px;
+        height: 80px;
+    }
+    .brand_offers_box_detail{
+        background-color: #F7F6FF;
+        margin: 0;
+    }
+    .span1{
+        font-size: 10px;
+        font-weight: 600;
+    }
+    .span2{
+        font-size: 30px;
+        margin-top: -20px;
+        font-weight: 800;
+    }
+    .new_on_cashback{
+        padding: 15px;
+        height: 387px;
+        background-color: #F2F7FC;
+    }
+    .item-g, .item-h{
+        width: 190px;
+        height: 190px;
+    }
+    .stories_posters{
+        width: 100%;
+        height: 348px;
+    }
+    .storiesbox{
+        width: 200px;
+        height: 310px;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    .storiesbox1{
+        background-color: #FF1A2A;
+    }
+    .storiesbox2{
+        background-color: #D9D9D9;
+    }
+    .stories_poster_logo{
+        background: transparent;
+        margin-left: 33px;
+        margin-top: 19px;
+    }
+    .new_brand_box{
+        width: 176px;
+        height: auto;
+        border: 1px solid #D9E3EC;
+        text-align: center;
+        align-items: center;
+        border-radius: 8px;
+        padding: 30px;
+    }
+    .new_brand_logo{
+        width: 100%;
+        height: 72px;
+        margin-top: 22px;
+    }
+    .new_brand_detail{
+        width: 176px;
+        height: 51px;
+        border-top: 1px solid #D9E3EC;
+    }
+    .new_brand_detail_cashback{
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .new_brand_detail_cashback_duration{
+        font-size: 10px;
+        font-weight: 500;
+        color: #0036DA;
+    }
+    .new_brand_moredetail{
+        font-size: 12px;
+        font-weight: 500;
+        border-top: 1px solid #D9E3EC;
+    }
+    .you_viewed{
+        font-size: 10px;
+        font-weight: 700;
+        color: #898A8D;
+    }
+    .trending{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .trendingbox{
+        width: 90%;
+        height: 50px;
+        border: 1px solid #D9E3EC;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .topcoupon_box{
+        width: 108px;
+        padding: 8px;
+        display: flex;
+    }
+    .topcoupon_box_no{
+        font-size: 46px;
+        font-weight: 800;
+        z-index: 1;
+        margin-top: 10px;
+        margin-left: -82px;
+        color: white;
+    }
+    .topcoupon_box_no2{
+        font-size: 39px;
+        font-weight: 800;
+        z-index: 1;
+        margin-top: 20px;
+        margin-left: -76px;
+        color: white;
+    }
+    .topcoupon_box_per{
+        font-size: 20px;
+        font-weight: 900;
+        z-index: 2;
+        margin-top: 25px;
+        margin-left: 0px;
+        color: white;
+    }
+    .topcoupon_box img{
+        width: 92px;
+        height: 92px;
+        z-index: 1;
+    }
+    .topcoupon_box_off{
+        font-size: 8px;
+        font-weight: 800;
+        z-index: 2;
+        margin-top: 46px;
+        margin-left: -17px;
+        color: white;
+    }
+    .coupon_quantity{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        width: 108px;
+        height: 78px;
+        z-index: 0;
+        background-color: #F3EEFD;
+        border: 1px solid #8A54E7;
+        color: #8A54E7;
+        border-radius: 8px;
+        margin-left: -90px;
+        margin-top: 40px;
+    }
+    .coupon_quantity p{
+        font-size: 12px;
+        font-weight: 600;
+        margin-top: 55px;
+    }
+    .topcoupon_box_rups{
+        font-size: 18px;
+        font-weight: 800;
+        z-index: 2;
+        margin-top: 35px;
+        margin-left: -85px;
+        color: white;
+    }
+    .topcoupon_box_off1{
+        z-index: 2;
+        font-size: 8px;
+        font-weight: 800;
+        margin-top: 62px;
+        margin-left: 53px;
+        color: white;
+    }
+    .item-p, .item-q{
+        padding: 10px;
+    }
+    .value_section{
+        width: 100%;
+        height: 500px;
+        padding: 10px;
+        overflow: hidden;
+    }
+    .valuebox{
+        display: flex;
+        flex-direction: column;
+        width: 312px;
+    }
+    .valuebox_img{
+        width: 100%;
+        height: 343px;
+        background-image: url(../img/medicine_shop.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .valuebox_img p{
+        font-size: 48px;
+        font-weight: 900;
+        line-height: 34px;
+        letter-spacing: -0.04em;
+        margin-left: 21px;
+        margin-top: 25px;
+    }
+    .valuebox_detail{
+        padding: 16px;
+        height: 111px;
+        background-color: #FED73E;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .delsey{
+        width: 100%;
+    }
+    .delsey_logo{
+        width: 100%;
+        height: 84px;
+        background-color: #F7F6FF;
+    }
+    .delsey_logo img{
+        width: 57px;
+        height: 58px;
+        margin-left: 9px;
+        margin-top: 20px;
+    }
+    .brand_name1{
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: -58px;
+        margin-left: 75px;
+    }
+    .brand_offer1{
+        font-size: 12px;
+        font-weight: 600;
+        margin-left: 75px;
+        margin-top: -15px;
+    }
+    .delsey_poster{
+        width: 100%;
+        height: 406px;
+        background-image: url(../img/delsey_poster.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .best_sellers_mobiles{
+        height: 410px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    .best_phone_box{
+        display: flex;
+        flex-direction: column;
+        width: 100px;
+        height: 200px;
+        text-align: center;
+    }
+    .best_phone_box img{
+        width: 100%;
+        height: 129px;
+    }
+    .mobile_model, .mobile_offer{
+        font-size: 12px;
+        font-weight: 600;
+        margin-top: 5px;
+    }
+    .mobile_offer{
+        color:#FF6B00;
+        margin-top: -1px;
+    }
+    .view_all{
+        text-align: center;
+        color: #0052CC;
+        margin-top: -35px;
+    }
+    .user_preferences{
+        height: 280px;
+        background-color: #0036DA;
+        color: white;
+        padding: 28px;
+    }
+    .user_preferences h5{
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 10px;
+    }
+    .selectbox{
+        display: block;
+        width: 166px;
+        height: 150px;
+        text-align: center;
+        justify-content: center;
+        background-color: white;
+        color: black;
+        box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.25);
+        border-radius: 4px;
+    }
+    .selectbox span{
+        margin-top: 27px;
+        font-size: 24px;
+        font-weight: 700;
+        display: inline-block;
+    }
+    .categorybox{
+        display: inline-block;
+        width: 166px;
+        height: 150px;
+        background-color: #7E2DE5;
+        box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.25);
+        border-radius: 4px;
+    }
+    .categorybox span{
+        display: inline-block;
+        margin-left: 23px; 
+    }
+    .item-r, .item-s{
+        margin-right: 20px;
+    }
+    .likebox{
+        width: 72px;
+        height: 33px;
+        position: absolute;
+        background-color: white;
+        margin-left: 17px;
+        border-radius: 4px;
+        align-items: center;
+        display: flex;
+        margin-top: 5px;
+    }
+    .likebox img{
+        margin-left: 8px;
+    }
+    .likebox span{
+        margin-left: 5px;
+        color: #7E2DE5; 
+        font-size:14px; 
+        font-weight:500;
+    }
+    .ustraposter{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 441px;
+        border: 1px solid #C4C4C4;
+    }
+    .ustra_logo{
+        padding: 12px;
+        margin-left: 12px;
+        width: 97px;
+        height: 29px;
+    }
+    .ustra_poster_photo{
+        width: 351px;
+        padding: 12px;
+        height: 230px;
+    }
+    .ustra_detail{
+        display: inline-block;
+        height: 175px;
+        margin-left: 53px;
+    }
+    .flashustra{
+        font-size: 16px;
+        font-weight: 700;
+        margin-left: -10px;
+    }
+    .ustradiscount{
+        font-size: 12px;
+        font-weight: 400;
+    }
+    .helpful_feedback{
+        width: 100%;
+        height: 70px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .helpful_feedback .fa{
+        margin-left: 10px;
+    }
+}
